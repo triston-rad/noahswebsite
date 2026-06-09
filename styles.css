@@ -239,3 +239,50 @@ footer p {
     text-align: center;
     border-top: 2px solid #222;
 }
+
+
+/* Mobile fixes for reels and video */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        width: 92%;
+        padding: 70px 0;
+    }
+
+    .reel-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .reel-grid video {
+        width: 100%;
+        max-width: 360px;
+        aspect-ratio: 9 / 16;
+        object-fit: cover;
+    }
+
+    .video-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .youtube-thumbnail,
+    .youtube-video {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .youtube-thumbnail img {
+        width: 100%;
+        display: block;
+    }
+}
