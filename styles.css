@@ -286,3 +286,7 @@ footer p {
         display: block;
     }
 }
+
+.left-focus {
+    object-position: 20% center;
+}
